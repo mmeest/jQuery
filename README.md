@@ -1,4 +1,49 @@
-jQuery - JavaScript framework
+<p align="center"><img src="jQueryScreen.jpg" width="500px"></p>
+
+<h1 align="center">
+    jQuery - JavaScript framework
+</h1>
+
+<h3 align="center">  
+    <a target="_blank" href="https://jquery.com/">jQuery</a>
+	<span> · </span>
+	<a target="_blank" href="https://notepad-plus-plus.org/">Notepad++</a>
+	<span> · </span>
+	<a target="_blank" href="http://brackets.io/">Brackets</a>
+	<span> · </span>
+	<a target="_blank" href="https://www.sublimetext.com/">Sublime text</a>
+	<span> · </span>
+	<a target="_blank" href="https://www.adobe.com/products/dreamweaver.html">Dreamweaver</a>
+</h3>
+
+## Contents
+
+- [Notepad++](#notepad++---editor)
+- [Brackets](#brackets---editor)
+- [Sublime text](#sublime-text---editor)
+- [Dreamweaver](#dreamweaver---editor)
+- [jQuery](#jquery)
+- [installing jQuery](#installing-jquery)
+- [To test it out](#to-test-it-out)
+- [hide() and show()](#hide()-and-show())
+- [Events](#events)
+- [Fade](#fade)
+- [Slide](#slide)
+- [Animate](#animate)
+- [Stop animation](#stop-animation)
+- [Callback](#callback)
+- [Chaining](#chaining)
+- [Get](#get)
+- [Set](#set)
+- [Add](#add)
+- [Remove](#remove)
+- [Get and Set CSS classes](#get-and-set-css-classes)
+- [CSS](#css)
+- [Dimensions](#dimensions)
+- [Traversing](#traversing)
+- [AJAX](#ajax)
+- [Miscellaneous](#miscellaneous)
+- [Properties](#properties)
 
 <img src="logos/notepad.jpg">
 
@@ -20,7 +65,7 @@ https://github.com/adobe/brackets/releases
 
 ## Sublime text - Editor
 **Homepage:** \
-
+https://www.sublimetext.com/
 <img src="dreamviewer">
 
 ## Dreamweaver - Editor
