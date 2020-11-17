@@ -18,7 +18,7 @@
 
 ## Contents
 
-- [Notepad++](#notepad++---editor)
+- [Notepad++](#notepad---editor)
 - [Brackets](#brackets---editor)
 - [Sublime text](#sublime-text---editor)
 - [Dreamweaver](#dreamweaver---editor)
