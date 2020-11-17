@@ -25,7 +25,7 @@
 - [jQuery](#jquery)
 - [installing jQuery](#installing-jquery)
 - [To test it out](#to-test-it-out)
-- [hide() and show()](#hide()-and-show())
+- [hide() and show()](#hide-and-show)
 - [Events](#events)
 - [Fade](#fade)
 - [Slide](#slide)
@@ -105,7 +105,7 @@ Add following code to your HTML head:
 **Output:** \
 I love jQuery
 
-## hide() and show()
+## hide and show
 
 **$(this).hide()** - hides the current element. \
 **$("p").hide()** - hides all <p> elements. \
@@ -330,7 +330,7 @@ $("button").click(function(){
 }); 
 ```
 
-## Travesing
+## Traversing
 jQuery traversing, which means "move through", are used to "find" (or select) HTML elements based on their relation to other elements. Start with one selection and move through that selection until you reach the elements you desire.
 
 <img src="logos/travesing.jpg">
