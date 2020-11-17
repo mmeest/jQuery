@@ -1,4 +1,4 @@
-<p align="center"><img src="jQueryScreen.jpg" width="500px"></p>
+<p align="center"><img src="logos/jQueryScreen.jpg" width="500px"></p>
 
 <h1 align="center">
     jQuery - JavaScript framework
@@ -66,6 +66,7 @@ https://github.com/adobe/brackets/releases
 ## Sublime text - Editor
 **Homepage:** \
 https://www.sublimetext.com/
+
 <img src="dreamviewer">
 
 ## Dreamweaver - Editor
