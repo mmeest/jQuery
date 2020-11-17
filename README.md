@@ -59,19 +59,24 @@ Add following code to your HTML head:
 **Output:** \
 I love jQuery
 
-## Hide element by onclick
+## hide() and show()
 
 **$(this).hide()** - hides the current element. \
-**$("p").hide()** - hides all <p> elements.\
-**$(".test").hide()** - hides all elements with class="test".\
-**$("#test").hide()** - hides the element with id="test".\
+**$("p").hide()** - hides all <p> elements. \
+
+**$(".test").hide()** - hides all elements with class="test". \
+**$("#test").hide()** - hides the element with id="test". \
 
 Code example with onclick:
 ```
 $(document).ready(function(){
-  $("p").click(function(){
-    $(this).hide();
-  });
+    $("p").click(function(){
+        $(this).hide();
+    });
+    
+    $("#show").click(function(){
+        $("p").show();
+    });
 });
 ```
 
@@ -79,10 +84,183 @@ $(document).ready(function(){
 
 | Mouse Events | Keyboard Events | Form Events | Document/Window Events |
 |--------------|-----------------|-------------|------------------------|
-| click        |	keypress       |	submit     |	load                  |
-| dblclick     |	keydown        |	change     |	resize                |
-| mouseenter   |	keyup          |  focus      |  scroll                |
-| mouseleave   |                 |  blur       |  unload                |
+| click        | keypress        |	submit     | load                   |
+| dblclick     | keydown         |	change     | resize                 |
+| mouseenter   | keyup           |  focus      | scroll                 |
+| mouseleave   |                 |  blur       | unload                 |
 
 
+**mouseenter()** - The function is executed when the mouse pointer enters the HTML element: \
+Code example:
+```
+$("#p1").mouseenter(function(){
+  alert("You entered p1!");
+});
+```
 
+## Fade
+jQuery has the following fade methods to fade elements in and out of visibility:
+
+* fadeIn()
+* fadeOut()
+* fadeToggle()
+* fadeTo()
+
+Code example:
+```
+$("button").click(function(){
+  $("#div1").fadeIn();
+  $("#div2").fadeIn("slow");
+  $("#div3").fadeIn(3000);
+}); 
+```
+
+## Slide
+jQuery has the following slide methods to slide elements up and down:
+
+* slideDown()
+* slideUp()
+* slideToggle()
+
+Code example:
+```
+$("#flip").click(function(){
+  $("#panel").slideDown();
+}); 
+```
+
+## Animate
+Code example:
+```
+$("button").click(function(){
+  $("div").animate({
+    left: '250px',
+    opacity: '0.5',
+    height: '150px',
+    width: '150px'
+  });
+});  
+```
+
+## Stop animation
+Code example:
+```
+$("#stop").click(function(){
+  $("#panel").stop();
+}); 
+```
+
+## Callback
+A callback function is executed after the current effect is 100% finished. \
+Code example:
+```
+$("button").click(function(){
+  $("p").hide("slow", function(){
+    alert("The paragraph is now hidden");
+  });
+}); 
+```
+
+## Chaining
+With jQuery, you can chain together actions/methods. \
+Chaining allows us to run multiple jQuery methods (on the same element) within a single statement.
+
+Code example:
+```
+$("#p1").css("color", "red").slideUp(2000).slideDown(2000); 
+```
+
+## Get
+jQuery contains powerful methods for changing and manipulating HTML elements and attributes. \
+Three simple, but useful, jQuery methods for DOM manipulation are: \
+* **text()** - Sets or returns the text content of selected elements
+* **html()** - Sets or returns the content of selected elements (including HTML markup)
+* **val()** - Sets or returns the value of form fields
+
+Code example for **text()** and **html()** methods:
+```
+$("#btn1").click(function(){
+  alert("Text: " + $("#test").text());
+});
+$("#btn2").click(function(){
+  alert("HTML: " + $("#test").html());
+});
+```
+
+## Set
+jQuery set methods: \
+* **text()** - Sets or returns the text content of selected elements
+* **html()** - Sets or returns the content of selected elements (including HTML markup)
+* **val()** - Sets or returns the value of form fields
+
+Code example:
+```
+$("#btn1").click(function(){
+  $("#test1").text("Hello world!");
+});
+$("#btn2").click(function(){
+  $("#test2").html("<b>Hello world!</b>");
+});
+$("#btn3").click(function(){
+  $("#test3").val("Dolly Duck");
+});
+```
+
+## Add
+Methods to add new content:
+* **append()** - Inserts content at the end of the selected elements
+* **prepend()** - Inserts content at the beginning of the selected elements
+* **after()** - Inserts content after the selected elements
+* **before()** - Inserts content before the selected elements
+
+Code example:
+```
+function appendText() {
+  var txt1 = "<p>Text.</p>";               // Create element with HTML 
+  var txt2 = $("<p></p>").text("Text.");   // Create with jQuery
+  var txt3 = document.createElement("p");  // Create with DOM
+  txt3.innerHTML = "Text.";
+  $("body").append(txt1, txt2, txt3);      // Append the new elements
+} 
+```
+
+## Remove
+To remove elements and content, there are mainly two jQuery methods:
+* **remove()** - Removes the selected element (and its child elements)
+* **empty()** - Removes the child elements from the selected element
+
+Code example:
+```
+$("#div1").remove();
+
+$("#div1").empty(); 
+```
+
+## Get and Set CSS classes
+jQuery has several methods for CSS manipulation. We will look at the following methods:
+* **addClass()** - Adds one or more classes to the selected elements
+* **removeClass()** - Removes one or more classes from the selected elements
+* **toggleClass()** - Toggles between adding/removing classes from the selected elements
+* **css()** - Sets or returns the style attribute
+
+Code example:
+```
+$("button").click(function(){
+  $("h1, h2, p").addClass("blue");
+  $("div").addClass("important");
+});
+```
+
+## CSS
+* **css()** method sets or returns one or more style properties for the selected elements.
+
+Code example to get 'p' element background color rgb value:
+```
+$(document).ready(function(){
+  $("button").click(function(){
+    alert("Background color = " + $("p").css("background-color"));
+  });
+});
+```
+
+## Dimensions
